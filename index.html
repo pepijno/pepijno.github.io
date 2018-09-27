@@ -1,7 +1,92 @@
-<!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+	<head>
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-transition="fade" data-background-image="images/eos.png" data-background-size="contain">
+                </section>
+				<section data-transition="fade" data-background-image="images/unicorn.gif">
+                </section>
+                <section data-transition="fade">
+                    Blockchain for dapps without the downsides of current blockchains
+                </section>
+                <section data-transition="fade">
+                    <h2>Ethereum</h2>
+                        <ul>
+                        <li class="fragment">Proof of Work (transitioning to Proof of Stake)</li>
+                        <li class="fragment">Transaction fees</li>
+                        <li class="fragment">New blocks ~15s</li>
+                        <li class="fragment">~15 transactions/s</li>
+                        <li class="fragment">Ethereum addresses</li>
+                        <li class="fragment">Solidity as smart contract language</li>
+                        <li class="fragment">Gas is used to pay for smart contracts</li>
+                    </ul>
+                </section>
+                <section data-transition="fade">
+                    <h2>EOS</h2>
+                    <ul>
+                        <li class="fragment">Delegated Proof of Stake (DPos)</li>
+                        <li class="fragment">No transaction fees</li>
+                        <li class="fragment">New blocks ~0.5s</li>
+                        <li class="fragment">3000+ transactions/s</li>
+                        <li class="fragment">Users are free to choose the account name</li>
+                        <li class="fragment">c++/webassembly as smart contract language</li>
+                        <li class="fragment">Coins are staked for the duration of a smart contract</li>
+                    </ul>
+                </section>
+                <section data-transition="fade">
+                    <h2>Delegated Proof of Stake</h2>
+                    <section data-transition="fade">
+                        All owners of EOS tokens can stake tokens as a vote for a block producer
+                    </section>
+                    <section data-transition="fade">
+                        The 21 most voted candidates are the 21 block producers
+                    </section>
+                    <section data-transition="fade">
+                        The 21 block producer create the new blocks; each block producer creates 6 blocks
+                    </section>
+                    <section data-transition="fade">
+                        Blocks need to be signed by at least 15 blocks
+                    </section>
+                </section>
+                <section data-transition="fade">
+                    Users 'pay' for using EOS by a yearly 5% inflation
+                </section>
+                <section data-transition="fade">
+                    The amout of memory, storage, computing power and network traffic a user can use is based on the amount of EOS tokens
+                </section>
+                <section data-transition="fade">
+                    <h2>Governance</h2>
+                    <section data-transition="fade">
+                        A Constitution consists of all non-programmeable rules; the hash of the constitution is used in all transactions
+                    </section>
+                    <section data-transition="fade">
+                        Changes in the constitution and source code need a 15/21 approval of the blockproducers for 30 consecutive days
+                    </section>
+                    <section data-transition="fade">
+                        Block producers can freeze accounts
+                    </section>
+                </section>
+                <section data-transition="fade">
+                    <h2>Criticism</h2>
+                    <section data-transition="fade">
+                        Centralization and Governance
+                    </section>
+                    <section data-transition="fade">
+                        Voting
+                    </section>
+                    <section data-transition="fade">
+                        Launch and dapp development
+                    </section>
+                </section>
+			</div>
+		</div>
+		<script src="js/reveal.js"></script>
+		<script>
+			Reveal.initialize();
+		</script>
+	</body>
 </html>
